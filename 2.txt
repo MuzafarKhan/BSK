@@ -1,1 +1,2 @@
-3+3 makes 33
+3+3 = 3+3 
+LHS vs RHS 
