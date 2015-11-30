@@ -1,8 +1,0 @@
-diff a/2.txt b/2.txt	(rejected hunks)
-@@ -2,5 +2,6 @@
- +<<<<<<< HEAD
- +2
-++2
- +=======
-  22
- +>>>>>>> no message
