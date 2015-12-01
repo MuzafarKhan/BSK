@@ -1,15 +1,15 @@
 function aoo() 
 {
 	var i = 0;
-	i++=
+	i++;
 }
 function boo() 
 {
 	var k = 0;
-	k--=
+	k--;
 }
 function coo() 
 {
 	var k = 0;
-	k++=
+	k++;
 }
