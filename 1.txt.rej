@@ -1,6 +1,12 @@
 diff a/1.txt b/1.txt	(rejected hunks)
-@@ -0 +0 @@
--1111111111
-\ No newline at end of file
-+1111
+@@ -12,4 +12,9 @@
+ {
+ 	var k = 0;
+ 	k++;
++}
++function doo() 
++{
++	var k = 0;
++	k++;
+ }
 \ No newline at end of file

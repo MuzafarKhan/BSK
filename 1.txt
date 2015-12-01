@@ -16,5 +16,4 @@ function coo()
 function doo() 
 {
 	var k = 0;
-	k++;
 }
