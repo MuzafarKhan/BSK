@@ -5,8 +5,8 @@ function aoo()
 }
 function boo() 
 {
-	var k = 0;
-	k--;
+	var j = 0;
+	j--;
 }
 function coo() 
 {
