@@ -13,3 +13,8 @@ function coo()
 	var k = 0;
 	k++;
 }
+function doo() 
+{
+	var k = 0;
+	k++;
+}
