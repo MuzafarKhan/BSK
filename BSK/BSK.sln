@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSKPublic", "BSK\BSKPublic.csproj", "{4EAE0B8C-02AC-4EB6-A4FF-FDAA0413B6F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSK.Lib", "BSK.Lib\BSK.Lib.csproj", "{FE57B90F-245F-413B-8D38-92BE8A227287}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSKDatabase", "BSKDatabase\BSKDatabase.csproj", "{B2279877-ACA5-48EC-87BF-A9BD1A49EFA9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BSKBusiness", "BSKBusiness\BSKBusiness.csproj", "{3638993B-3D8D-4441-9DC1-D562059EFD25}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://muzafarkhan.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = BSK\\BSKPublic.csproj
+		SccProjectName1 = BSK
+		SccLocalPath1 = BSK
+		SccProjectUniqueName2 = BSK.Lib\\BSK.Lib.csproj
+		SccProjectName2 = BSK.Lib
+		SccLocalPath2 = BSK.Lib
+		SccProjectUniqueName3 = BSKDatabase\\BSKDatabase.csproj
+		SccProjectName3 = BSKDatabase
+		SccLocalPath3 = BSKDatabase
+		SccProjectUniqueName4 = BSKBusiness\\BSKBusiness.csproj
+		SccProjectName4 = BSKBusiness
+		SccLocalPath4 = BSKBusiness
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4EAE0B8C-02AC-4EB6-A4FF-FDAA0413B6F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EAE0B8C-02AC-4EB6-A4FF-FDAA0413B6F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EAE0B8C-02AC-4EB6-A4FF-FDAA0413B6F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EAE0B8C-02AC-4EB6-A4FF-FDAA0413B6F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE57B90F-245F-413B-8D38-92BE8A227287}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE57B90F-245F-413B-8D38-92BE8A227287}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE57B90F-245F-413B-8D38-92BE8A227287}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE57B90F-245F-413B-8D38-92BE8A227287}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B2279877-ACA5-48EC-87BF-A9BD1A49EFA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2279877-ACA5-48EC-87BF-A9BD1A49EFA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2279877-ACA5-48EC-87BF-A9BD1A49EFA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2279877-ACA5-48EC-87BF-A9BD1A49EFA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3638993B-3D8D-4441-9DC1-D562059EFD25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3638993B-3D8D-4441-9DC1-D562059EFD25}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3638993B-3D8D-4441-9DC1-D562059EFD25}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3638993B-3D8D-4441-9DC1-D562059EFD25}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

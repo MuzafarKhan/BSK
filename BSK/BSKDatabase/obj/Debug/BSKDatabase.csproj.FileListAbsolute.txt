@@ -1,0 +1,7 @@
+E:\Projects\BSK\BSKDatabase\bin\Debug\Database\BSK.mdf
+E:\Projects\BSK\BSKDatabase\bin\Debug\Database\BSK_log.ldf
+E:\Projects\BSK\BSKDatabase\bin\Debug\BSKDatabase.dll
+E:\Projects\BSK\BSKDatabase\bin\Debug\BSKDatabase.pdb
+E:\Projects\BSK\BSKDatabase\obj\Debug\BSKDatabase.csprojResolveAssemblyReference.cache
+E:\Projects\BSK\BSKDatabase\obj\Debug\BSKDatabase.dll
+E:\Projects\BSK\BSKDatabase\obj\Debug\BSKDatabase.pdb

@@ -1,0 +1,8 @@
+E:\Projects\BSK\BSKBusiness\bin\Debug\BSKBusiness.dll
+E:\Projects\BSK\BSKBusiness\bin\Debug\BSKBusiness.pdb
+E:\Projects\BSK\BSKBusiness\bin\Debug\Dapper.dll
+E:\Projects\BSK\BSKBusiness\bin\Debug\Dapper.pdb
+E:\Projects\BSK\BSKBusiness\bin\Debug\Dapper.xml
+E:\Projects\BSK\BSKBusiness\obj\Debug\BSKBusiness.csprojResolveAssemblyReference.cache
+E:\Projects\BSK\BSKBusiness\obj\Debug\BSKBusiness.dll
+E:\Projects\BSK\BSKBusiness\obj\Debug\BSKBusiness.pdb
