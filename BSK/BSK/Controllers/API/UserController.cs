@@ -29,8 +29,9 @@ namespace BSK.Controllers.API
             await SaveFile((int)Enumerations.MediaType.User);
             UserInfo ui = (UserInfo)GetFormData<UserInfo>(result);
 
-            //var controller = ControllerContext.Controller as ApiController;
-            //controller.Validate(ui);
+            var controller = ControllerContext.Controller as ApiController;
+            controller.Validate(ui);
+
             if (ui.intUserId > 0)
             {
                 ModelState.Remove("Pwd");
