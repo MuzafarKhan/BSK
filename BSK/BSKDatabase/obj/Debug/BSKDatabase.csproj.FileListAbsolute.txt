@@ -5,3 +5,10 @@ E:\Projects\BSK\BSKDatabase\bin\Debug\BSKDatabase.pdb
 E:\Projects\BSK\BSKDatabase\obj\Debug\BSKDatabase.csprojResolveAssemblyReference.cache
 E:\Projects\BSK\BSKDatabase\obj\Debug\BSKDatabase.dll
 E:\Projects\BSK\BSKDatabase\obj\Debug\BSKDatabase.pdb
+E:\GitProjects\BSK\BSK\BSKDatabase\bin\Debug\Database\BSK.mdf
+E:\GitProjects\BSK\BSK\BSKDatabase\bin\Debug\Database\BSK_log.ldf
+E:\GitProjects\BSK\BSK\BSKDatabase\bin\Debug\BSKDatabase.dll
+E:\GitProjects\BSK\BSK\BSKDatabase\bin\Debug\BSKDatabase.pdb
+E:\GitProjects\BSK\BSK\BSKDatabase\obj\Debug\BSKDatabase.csprojResolveAssemblyReference.cache
+E:\GitProjects\BSK\BSK\BSKDatabase\obj\Debug\BSKDatabase.dll
+E:\GitProjects\BSK\BSK\BSKDatabase\obj\Debug\BSKDatabase.pdb

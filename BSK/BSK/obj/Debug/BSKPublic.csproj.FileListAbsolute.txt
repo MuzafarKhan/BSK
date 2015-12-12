@@ -124,3 +124,5 @@ E:\Projects\BSK\BSK\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 E:\Projects\BSK\BSK\obj\Debug\BSKPublic.csprojResolveAssemblyReference.cache
 E:\Projects\BSK\BSK\obj\Debug\BSK.dll
 E:\Projects\BSK\BSK\obj\Debug\BSK.pdb
+E:\GitProjects\BSK\BSK\BSK\obj\Debug\BSKPublic.csprojResolveAssemblyReference.cache
+E:\GitProjects\BSK\BSK\BSK\obj\Debug\BSK.dll
