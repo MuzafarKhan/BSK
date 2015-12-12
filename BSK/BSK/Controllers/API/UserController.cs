@@ -14,7 +14,7 @@ namespace BSK.Controllers.API
     [RoutePrefix("api/User")]
     public class UserController :  BaseApiController
     {
-
+        [HttpGet]
         [Route("GetUsersList")]
         public List<BSK.Lib.Models.UserInfo> GetUsersList()
         {

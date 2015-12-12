@@ -1,0 +1,7 @@
+c:\Users\muzafar khan\documents\visual studio 2013\Projects\j\BSK\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+c:\Users\muzafar khan\documents\visual studio 2013\Projects\j\BSK\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+c:\Users\muzafar khan\documents\visual studio 2013\Projects\j\BSK\ClassLibrary1\obj\Debug\BSK.Database.csprojResolveAssemblyReference.cache
+c:\Users\muzafar khan\documents\visual studio 2013\Projects\j\BSK\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+c:\Users\muzafar khan\documents\visual studio 2013\Projects\j\BSK\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\ClassLibrary1\bin\Debug\Database\BSK.mdf
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\ClassLibrary1\bin\Debug\Database\BSK_log.ldf

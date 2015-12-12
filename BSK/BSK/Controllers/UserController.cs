@@ -18,5 +18,5 @@ namespace BSK.Controllers
         {
             return View();
         }
-	}
+    }
 }

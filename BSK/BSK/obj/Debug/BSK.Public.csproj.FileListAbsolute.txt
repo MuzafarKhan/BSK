@@ -1,0 +1,68 @@
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\BSK.dll.config
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\BSK.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\BSK.pdb
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\Antlr3.Runtime.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\Newtonsoft.Json.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Net.Http.Formatting.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.Helpers.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.Http.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.Http.WebHost.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.Mvc.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.Optimization.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.Razor.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.WebPages.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.WebPages.Razor.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\WebGrease.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\Newtonsoft.Json.xml
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Net.Http.Formatting.xml
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.Helpers.xml
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.Http.xml
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.Http.WebHost.xml
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.Mvc.xml
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.Optimization.xml
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.Razor.xml
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.WebPages.xml
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\System.Web.WebPages.Razor.xml
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\Antlr3.Runtime.pdb
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\obj\Debug\BSK.Public.csprojResolveAssemblyReference.cache
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\obj\Debug\BSK.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\obj\Debug\BSK.pdb
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\BSK.Lib.dll
+C:\Users\Muzafar Khan\Documents\Visual Studio 2013\Projects\j\BSK\BSK\bin\BSK.Lib.pdb
+E:\GitProjects\BSK\BSK\BSK\bin\BSK.dll.config
+E:\GitProjects\BSK\BSK\BSK\bin\BSK.dll
+E:\GitProjects\BSK\BSK\BSK\bin\BSK.pdb
+E:\GitProjects\BSK\BSK\BSK\bin\Antlr3.Runtime.dll
+E:\GitProjects\BSK\BSK\BSK\bin\BSK.Lib.dll
+E:\GitProjects\BSK\BSK\BSK\bin\Microsoft.Web.Infrastructure.dll
+E:\GitProjects\BSK\BSK\BSK\bin\Newtonsoft.Json.dll
+E:\GitProjects\BSK\BSK\BSK\bin\System.Net.Http.Formatting.dll
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.Helpers.dll
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.Http.dll
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.Http.WebHost.dll
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.Mvc.dll
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.Optimization.dll
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.Razor.dll
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.WebPages.Deployment.dll
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.WebPages.dll
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.WebPages.Razor.dll
+E:\GitProjects\BSK\BSK\BSK\bin\WebGrease.dll
+E:\GitProjects\BSK\BSK\BSK\bin\BSK.Lib.pdb
+E:\GitProjects\BSK\BSK\BSK\bin\Newtonsoft.Json.xml
+E:\GitProjects\BSK\BSK\BSK\bin\System.Net.Http.Formatting.xml
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.Helpers.xml
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.Http.xml
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.Http.WebHost.xml
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.Mvc.xml
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.Optimization.xml
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.Razor.xml
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.WebPages.xml
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.WebPages.Deployment.xml
+E:\GitProjects\BSK\BSK\BSK\bin\System.Web.WebPages.Razor.xml
+E:\GitProjects\BSK\BSK\BSK\bin\Antlr3.Runtime.pdb
+E:\GitProjects\BSK\BSK\BSK\obj\Debug\BSK.Public.csprojResolveAssemblyReference.cache
+E:\GitProjects\BSK\BSK\BSK\obj\Debug\BSK.dll
+E:\GitProjects\BSK\BSK\BSK\obj\Debug\BSK.pdb
