@@ -146,7 +146,6 @@ E:\GitProjects\BSK\BSK\BSK\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
 E:\GitProjects\BSK\BSK\BSK\bin\Microsoft.Owin.Security.OAuth.dll
 E:\GitProjects\BSK\BSK\BSK\bin\Microsoft.Owin.Security.Twitter.dll
 E:\GitProjects\BSK\BSK\BSK\bin\Microsoft.Web.Infrastructure.dll
-E:\GitProjects\BSK\BSK\BSK\bin\Newtonsoft.Json.dll
 E:\GitProjects\BSK\BSK\BSK\bin\Owin.dll
 E:\GitProjects\BSK\BSK\BSK\bin\System.Net.Http.Formatting.dll
 E:\GitProjects\BSK\BSK\BSK\bin\System.Web.Helpers.dll
