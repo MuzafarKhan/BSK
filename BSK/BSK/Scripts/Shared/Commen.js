@@ -322,21 +322,21 @@ Common.prototype = {
 
 };
 
-// Map
-$(function () {
-    $(".map_outer").appendTo("body");
-});
+//// Map
+//$(function () {
+//    $(".map_outer").appendTo("body");
+//});
 
 
-$(function () {
-    var commObj = new Common();
-    commObj.Init();
-});
+//$(function () {
+//    var commObj = new Common();
+//    commObj.Init();
+//});
 
-// Sorting Script
-$('a[ng-click*=sortGrid]').click(function () {
-    $('a[ng-click]').toggleClass('sort-show');
-});
+//// Sorting Script
+//$('a[ng-click*=sortGrid]').click(function () {
+//    $('a[ng-click]').toggleClass('sort-show');
+//});
 // Script for Makinf "XRC capital in whole application"
 
 //$(window).load(function () {

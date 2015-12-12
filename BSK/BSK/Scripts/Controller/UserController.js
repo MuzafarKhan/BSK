@@ -1,16 +1,16 @@
-﻿app.controller('UserController', function ($scope, UserService) {
+﻿app.controller('UserController', function ($scope, $upload, UserService) {
     $scope.files = [];
-    debugger;
+    
 
     $scope.LoadUsers = function () {
         var usersList = UserService.getUsers();
         usersList.then(function (pl) {
 
             $scope.UsersList = pl.data
-            debugger;
+            
         },
               function (errorPl) {
-                  debugger;
+                  
               });
     },
 
@@ -34,18 +34,18 @@
         $scope.message = '';
         $scope.errors = [];
 
-        var User = new function () {
-            intUserId = $scope.intUserId? $scope.intUserId : '';
-            vchName = $scope.vchName ? $scope.vchName : '';
-            vchPassword = $scope.vchPassword ? $scope.vchPassword : '';
-            vchEmail = $scope.vchEmail ? $scope.vchEmail : '';
-            vchDateCreated = $scope.vchDateCreated ? $scope.vchDateCreated : '';
-            intUserTypeId = $scope.intUserTypeId ? $scope.intUserTypeId : '';
-            vchPhotoUrl = $scope.vchPhotoUrl ? $scope.vchPhotoUrl : '';
-            intContactNumberPrimary = $scope.intContactNumberPrimary ? $scope.intContactNumberPrimary : '';
-            intContactNumberSecondary = $scope.intContactNumberSecondary ? $scope.intContactNumberSecondary : '';
-            intCityId = $scope.intCityId ? $scope.intCityId : '';
-            intBitActive = $scope.intBitActive ? $scope.intBitActive : '';
+        var Userinfo = {
+            intUserId : $scope.intUserId? $scope.intUserId : '',
+            vchName : $scope.vchName ? $scope.vchName : '',
+            vchPassword : $scope.vchPassword ? $scope.vchPassword : '',
+            vchEmail : $scope.vchEmail ? $scope.vchEmail : '',
+            vchDateCreated : $scope.vchDateCreated ? $scope.vchDateCreated : '',
+            intUserTypeId : $scope.intUserTypeId ? $scope.intUserTypeId : '',
+            vchPhotoUrl : $scope.vchPhotoUrl ? $scope.vchPhotoUrl : '',
+            intContactNumberPrimary : $scope.intContactNumberPrimary ? $scope.intContactNumberPrimary : '',
+            intContactNumberSecondary : $scope.intContactNumberSecondary ? $scope.intContactNumberSecondary : '',
+            intCityId : $scope.intCityId ? $scope.intCityId : '',
+            intBitActive: $scope.intBitActive ? $scope.intBitActive : ''
         }
 
         $upload.upload({

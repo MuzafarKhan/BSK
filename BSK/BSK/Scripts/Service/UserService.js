@@ -1,5 +1,5 @@
 ﻿app.service('UserService', function ($http) {
-    debugger;
+    
     //this.post = function (User) {
     //    var request = $http({
     //        method: "post",
@@ -10,7 +10,7 @@
     //},
 
     this.getUsers = function () {
-        debugger;
+        
         return $http.get("/api/User/GetUsersList");
     }
     //,
