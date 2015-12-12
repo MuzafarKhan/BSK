@@ -66,19 +66,19 @@
                         <div class="form-group">
                             <label class="col-sm-3 control-label">Name</label>
                             <div class="col-sm-7">
-                                <input type="text" placeholder="" class="form-control" ng-model="FirstName" maxlength="15">
+                                <input type="text" placeholder="" class="form-control" ng-model="vchName" maxlength="15">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">Password</label>
                             <div class="col-sm-7">
-                                <input type="password" placeholder="" class="form-control" ng-model="Pwd" ng-init="Pwd=''" ng-blur="PasswordValidateLength(Pwd)">
+                                <input type="password" placeholder="" class="form-control" ng-model="vchPassword" ng-init="vchPassword=''" ng-blur="PasswordValidateLength(Pwd)">
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="col-sm-3 control-label">Email</label>
                             <div class="col-sm-7">
-                                <input type="text" placeholder="" class="form-control" ng-model="Email" ng-change="OnChangeingvalue()" ng-click="PasswordValidate(RePassword)" ng-blur="EmailVerification(Email)">
+                                <input type="text" placeholder="" class="form-control" ng-model="vchEmail" ng-change="OnChangeingvalue()" ng-click="PasswordValidate(RePassword)" ng-blur="EmailVerification(Email)">
                                 <input id="HiddenOldEmailVal" type="hidden" name="HiddenOldEmailVal" ng-model="oldEmailval" />
                             </div>
                         </div>

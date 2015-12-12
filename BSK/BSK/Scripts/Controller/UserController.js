@@ -35,7 +35,7 @@
         $scope.errors = [];
 
         var Userinfo = {
-            intUserId : $scope.intUserId? $scope.intUserId : '',
+            intUserId : $scope.intUserId? $scope.intUserId : 0,
             vchName : $scope.vchName ? $scope.vchName : '',
             vchPassword : $scope.vchPassword ? $scope.vchPassword : '',
             vchEmail : $scope.vchEmail ? $scope.vchEmail : '',
@@ -51,7 +51,7 @@
         $upload.upload({
             url: "/api/User/InsertUpdateUser", // webapi url
             method: "POST",
-            data: { fileUploadObj: User },
+            data: { fileUploadObj: Userinfo },
             file: $scope.files
         }).progress(function (evt) {
             // get upload percentage
