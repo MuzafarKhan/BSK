@@ -16,9 +16,9 @@ namespace BSK.Controllers.API
     {
 
         [Route("GetUsersList")]
-        public List<BSK.Lib.Models.Users> GetUsersList()
+        public List<BSK.Lib.Models.UserInfo> GetUsersList()
         {
-            return BSK.Lib.Models.Users.GetUsersList();
+            return BSK.Lib.Models.UserInfo.GetUsersList();
         }
 
 
@@ -27,7 +27,7 @@ namespace BSK.Controllers.API
         public async Task<IHttpActionResult> InsertUpdateUser()
         {
             await SaveFile((int)Enumerations.MediaType.User);
-            Users ui = (Users)GetFormData<Users>(result);
+            UserInfo ui = (UserInfo)GetFormData<UserInfo>(result);
 
             //var controller = ControllerContext.Controller as ApiController;
             //controller.Validate(ui);
@@ -49,7 +49,7 @@ namespace BSK.Controllers.API
             }
 
             //insert-updata Users
-            int userId = BSK.Lib.Models.Users.InsertUser(ui);
+            int userId = BSK.Lib.Models.UserInfo.InsertUser(ui);
             if (userId > 0)
             {
                 if (filedata != null)
@@ -61,7 +61,7 @@ namespace BSK.Controllers.API
                     string destination = System.Web.HttpContext.Current.Server.MapPath("~/Files/User/" + userId + "/");
                     Directory.Move(source, destination);
                     filedata.FileName = Utils.ResizeImages("~/Files/User/" + userId + "/" + filedata.FileName, "~/Files/User/" + userId + "/", 500);
-                    BSK.Lib.Models.Users.InsertPhotoUrl(userId, filedata.FileName);
+                    BSK.Lib.Models.UserInfo.InsertPhotoUrl(userId, filedata.FileName);
                 }
                 else
                 {
