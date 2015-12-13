@@ -26,11 +26,11 @@ namespace BSK.Controllers.API
         [HttpPost]
         public async Task<IHttpActionResult> InsertUpdateUser()
         {
-            await SaveFile((int)Enumerations.MediaType.User);
+            await SaveFile((int)Enumerations.MediaType.Profile);
             UserInfo ui = (UserInfo)GetFormData<UserInfo>(result);
 
-            var controller = ControllerContext.Controller as ApiController;
-            controller.Validate(ui);
+            //var controller = ControllerContext.Controller as ApiController;
+            //controller.Validate(ui);
 
             if (ui.intUserId > 0)
             {
@@ -61,8 +61,8 @@ namespace BSK.Controllers.API
                     string source = System.Web.HttpContext.Current.Server.MapPath("~/Files/User/" + rendomDirectoryName + "/");
                     string destination = System.Web.HttpContext.Current.Server.MapPath("~/Files/User/" + userId + "/");
                     Directory.Move(source, destination);
-                    filedata.FileName = Utils.ResizeImages("~/Files/User/" + userId + "/" + filedata.FileName, "~/Files/User/" + userId + "/", 500);
-                    BSK.Lib.Models.UserInfo.InsertPhotoUrl(userId, filedata.FileName);
+                    string CompressedName = Utils.ResizeImages("~/Files/User/" + userId + "/" + filedata.FileName, "~/Files/User/" + userId + "/", 500);
+                    FileData.InsertPhotoUrl(userId, filedata.FileName, CompressedName, (int)Enumerations.MediaType.Profile);
                 }
                 else
                 {

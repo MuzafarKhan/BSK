@@ -33,56 +33,21 @@ namespace BSK.Controllers.API
             VirtualPath = ConfigurationManager.AppSettings["MediaPath"];
             switch (mediaType)
             {
-                case (int)Enumerations.MediaType.Company:
+                case (int)Enumerations.MediaType.Deal:
                     {
-                        VirtualPath = VirtualPath + "Company/";
+                        VirtualPath = VirtualPath + "Deal/" + rendomDirectoryName + "/"; 
                         break;
                     }
-                case (int)Enumerations.MediaType.Property:
+                case (int)Enumerations.MediaType.Profile:
                     {
-                        VirtualPath = VirtualPath + "Property/";
+                        VirtualPath = VirtualPath + "Profile/";
                         break;
                     }
-                case (int)Enumerations.MediaType.User:
+                case (int)Enumerations.MediaType.Category:
                     {
-                        VirtualPath = VirtualPath + "User/" + rendomDirectoryName + "/";
+                        VirtualPath = VirtualPath + "Category/" + rendomDirectoryName + "/";
                         break;
                     }
-                case (int)Enumerations.MediaType.Agent:
-                    {
-                        VirtualPath = VirtualPath + "Agent/";
-                        break;
-                    }
-                case (int)Enumerations.MediaType.Portfolio:
-                    {
-                        VirtualPath = VirtualPath + "Portfolio/";
-                        break;
-                    }
-                case (int)Enumerations.MediaType.Suite:
-                    {
-                        VirtualPath = VirtualPath + "Suite/";
-                        break;
-                    }
-                case (int)Enumerations.MediaType.Listing:
-                    {
-                        VirtualPath = VirtualPath + "Listing/";
-                        break;
-                    }
-                case (int)Enumerations.MediaType.SaleComp:
-                    {
-                        VirtualPath = VirtualPath + "Listing/";
-                        break;
-                    }
-                case (int)Enumerations.MediaType.Task:
-                    {
-                        VirtualPath = VirtualPath + "Task/";
-                        break;
-                    }
-                //case (int)Enumerations.MediaType.Condo:
-                //    {
-                //        VirtualPath = VirtualPath + "Condo/";
-                //        break;
-                //    }
             }
             var root = HttpContext.Current.Server.MapPath(VirtualPath);
             if (!Directory.Exists(root))

@@ -1,4 +1,6 @@
 ﻿app.controller('UserController', function ($scope, $upload, UserService) {
+    
+
     $scope.files = [];
     
 
@@ -99,5 +101,5 @@
             console.log(data);
         });
     }
-
+    UserController = this;
 });
