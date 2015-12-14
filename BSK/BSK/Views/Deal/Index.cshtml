@@ -7,42 +7,47 @@
 <script src="~/Scripts/Service/SharedService.js"></script>
 <script src="~/Scripts/Service/DealService.js"></script>
 <script src="~/Scripts/Controller/DealController.js"></script>
+<script src="~/Scripts/Model/Deal.js"></script>
 
 <h2>Deal</h2>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="ibox float-e-margins">
+            <div ng-controller="DealController" id="DealGrid" ng-init="LoadDeals()">
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <tr>
+                            <th><label>ID</label></th>
+                            <th><label>Title</label></th>
+                            <th><label>Description</label></th>
+                            <th><label>Date</label></th>
+                            <th><label>Price</label></th>
+                        </tr>
 
-<div ng-controller="DealController" id="DealGrid" ng-init="LoadDeals()">
-    <div class="table-responsive">
-        <table class="table table-bordered table-hover">
-            <tr class="col-lg-12 b">
-                <th><label>ID</label></th>
-                <th><label>Title</label></th>
-                <th><label>Description</label></th>
-                <th><label>Date</label></th>
-                <th><label>Price</label></th>
-            </tr>
+                        <tr ng-repeat="Deal in DealsList">
+                            <td>{{Deal.DealId}}</td>
+                            <td>{{Deal.vchTitle}}</td>
+                            <td>{{Deal.vchDescription}}</td>
+                            <td>{{Deal.vchDateCreated == "1000-01-01T00:00:00" ?  "---" : Deal.vchDateCreated | date:'MM/dd/yyyy'}}</td>
+                            <td>{{Deal.Price}}</td>
+                        </tr>
+                        <tr ng-show="DealsList.length == 0">
+                            <td class="text-center alert-danger" colspan="7">
+                                No Deal(s) found!
+                            </td>
+                        </tr>
 
-            <tr class="col-lg-12 " ng-repeat="Deal in DealsList">
-                <td>{{Deal.DealId}}</td>
-                <td>{{Deal.vchTitle}}</td>
-                <td>{{Deal.vchDescription}}</td>
-                <td>{{Deal.vchDateCreated == "1000-01-01T00:00:00" ?  "---" : Deal.vchDateCreated | date:'MM/dd/yyyy'}}</td>
-                <td>{{Deal.Price}}</td>
-            </tr>
-            <tr ng-show="DealsList.length == 0">
-                <td class="text-center alert-danger" colspan="7">
-                    No Deal(s) found!
-                </td>
-            </tr>
+                    </table>
 
-        </table>
-
+                </div>
+                @Html.Partial("_Pagination")
+               
+            </div>
+        </div>
     </div>
-    @Html.Partial("_Pagination")
-    <a href="#DealModal" data-toggle="modal" class="btn btn-sm btn-primary" ng-click="ResetModel(false)" id="AddDeal">
-        <i class="fa fa-plus"></i> Add Deal
-    </a>
-</div>
-
+    </div><a href="#DealModal" data-toggle="modal" class="btn btn-sm btn-primary" ng-click="ResetModel(false)" id="AddDeal">
+    <i class="fa fa-plus"></i> Add Deal
+</a>
 
 <!-- Add Deal Modal-->
 <div class="modal inmodal in" id="DealModal" tabindex="-1" role="dialog" aria-hidden="false" ng-controller="DealController" style="display: none;">
@@ -66,7 +71,7 @@
                         <div class="form-group">
                             <label class="col-sm-3 control-label">Deal Title*</label>
                             <div class="col-sm-7">
-                                <input type="text" placeholder="" class="form-control" ng-model="vchTitle" maxlength="15">
+                                <input type="text" id="txtTitle" placeholder="" class="form-control" ng-model="vchTitle" maxlength="15">
                             </div>
                         </div>
                         <div class="form-group">
@@ -89,7 +94,7 @@
                         <div class="form-group">
                             <label class="col-sm-3 control-label">Price*</label>
                             <div class="col-sm-7">
-                                <input type="text" placeholder="" class="form-control" ng-model="Price" maxlength="15">
+                                <input type="text" id="txtPrice" placeholder="" class="form-control" ng-model="Price" maxlength="15">
                             </div>
                         </div>
                         <div class="form-group">

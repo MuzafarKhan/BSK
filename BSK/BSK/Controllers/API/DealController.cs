@@ -26,8 +26,8 @@ namespace BSK.Controllers.API
             await SaveFile((int)Enumerations.MediaType.Deal);
             Deal Deal = (Deal)GetFormData<Deal>(result);
 
-            //var controller = ControllerContext.Controller as ApiController;
-            //controller.Validate(ui);
+            var controller = ControllerContext.Controller as ApiController;
+            controller.Validate(Deal);
 
             if (Deal.DealId > 0)
             {

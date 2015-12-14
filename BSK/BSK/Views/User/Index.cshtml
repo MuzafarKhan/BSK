@@ -11,7 +11,7 @@
 <div ng-controller="UserController" ng-init="LoadUsers()">
     <div class="table-responsive">
         <table class="table table-bordered table-hover">
-            <tr class="col-lg-12 b">
+            <tr>
                 <th><label>ID</label></th>
                 <th><label>Name</label></th>
                 <th><label>Email</label></th>
@@ -19,7 +19,7 @@
                 <th><label>Contact Number Secondary</label></th>
             </tr>
 
-            <tr class="col-lg-12 " ng-repeat="User in UsersList">
+            <tr ng-repeat="User in UsersList">
                 <td>{{User.intUserId}}</td>
                 <td>{{User.vchName}}</td>
                 <td>{{User.vchEmail}}</td>
