@@ -15,7 +15,7 @@ namespace BSK.Controllers.API
     public class DealController : BaseApiController
     {
         [Route("GetDealsList")]
-        public List<Deal> GetDealsList(int PageId, int SortExpression, string SortBy)
+        public PagedCollection<Deal> GetDealsList(int PageId, int SortExpression, string SortBy)
         {
             return Deal.GetDealsList(PageId, SortExpression, SortBy , PageSize);
         }

@@ -1,19 +1,29 @@
-﻿app.controller('DealController', function ($scope, $upload, DealService, SharedService) {
+﻿app.controller('DealController', function ($scope, $upload, DealService,PagingService, SharedService) {
 
     $scope.files = [];
-    $scope.PageId = 1;
+    $scope.PageNo = 1;
     $scope.SortExpression = 0;
 
     $scope.LoadDeals = function () {
-        var DealsList = DealService.getDeals($scope.PageId, $scope.SortExpression,$scope.SortBy);
+        var DealsList = DealService.getDeals($scope.PageNo, $scope.SortExpression, $scope.SortBy);
         DealsList.then(function (pl) {
-            angular.element($("#DealGrid")).scope().DealsList = pl.data;            
+            angular.element($("#DealGrid")).scope().DealsList = pl.data.DataItems;
+            angular.element($("#DealGrid")).scope().TotalRecords = pl.data.TotalRecords;
+            angular.element($("#DealGrid")).scope().TotalPages = pl.data.TotalPages;
+            angular.element($("#DealGrid")).scope().RowStart = pl.data.RowStart;
+            angular.element($("#DealGrid")).scope().RowEnd = pl.data.RowEnd;
         },
               function (errorPl) {
                   
               });
     },
-
+    $scope.GeneratePager = function () {
+        return PagingService.PagingDom($scope.PageNo, $scope.TotalPages);
+    },
+     $scope.DoPaging = function (PageNo) {
+         $scope.PageNo = PageNo;
+         $scope.LoadDeals();
+     },
      $scope.setFiles = function (element) {
 
          // On false it will run.
