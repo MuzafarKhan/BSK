@@ -43,7 +43,6 @@
             vchEmail : $scope.vchEmail ? $scope.vchEmail : '',
             vchDateCreated : $scope.vchDateCreated ? $scope.vchDateCreated : '',
             intUserTypeId : $scope.intUserTypeId ? $scope.intUserTypeId : '',
-            vchPhotoUrl : $scope.vchPhotoUrl ? $scope.vchPhotoUrl : '',
             intContactNumberPrimary : $scope.intContactNumberPrimary ? $scope.intContactNumberPrimary : '',
             intContactNumberSecondary : $scope.intContactNumberSecondary ? $scope.intContactNumberSecondary : '',
             intCityId : $scope.intCityId ? $scope.intCityId : '',
@@ -69,37 +68,39 @@
             }
             else {
                 $scope.SortExpression = 2;
-                if (angular.element($("#ShowUserGrid")).scope() != undefined)
-                    angular.element($("#ShowUserGrid")).scope().LoadUsers();
+                angular.element($("#UserModal")).scope().LoadUsers();
                 $('#UserModal .close').click();
                 Common.prototype.ShowSuccessMessage(Messages.UserSaved);
-                $scope.ShowError = false;
-                $scope.Pwd = '';
-                $scope.UserId = 0;
-                $scope.UserTypeId = '0';
-                $scope.UserTitleId = '0';
-                $scope.UserClassId = '0';
-                $scope.FirstName = '';
-                $scope.MiddleInitial = '';
-                $scope.LastName = '';
-                $scope.NickName = '';
-                $scope.Login = '';
-                $scope.RePassword = '';
-                $scope.Email = '';
-                $scope.Website = '';
-                $scope.LinkedInProfile = '';
-                $scope.PhotoUrl = '';
-                $scope.RoleId = '';
-                $scope.HiddenPasswordStatus = 'No';
-                $('#filePhotoUrl').val('');
-                //Load Users
-                $scope.ResetFilter();
             }
 
         }).error(function (data, status, headers, config) {
             // file failed to upload
             console.log(data);
         });
+    },
+    $scope.LoginUser = function () {
+        $scope.ShowError = false;
+        $scope.ShowsuccessMesg = false;
+        $scope.message = '';
+        $scope.errors = [];
+
+        $scope.Email = $scope.Email ? $scope.Email : '';
+        $scope.Password = $scope.Password ? $scope.Password : '';
+
+        var Login = UserService.Login($scope.Email, $scope.Password);
+        Login.then(function (pl, status, headers, config) {
+            if (pl.data.success === false) {
+                $scope.errors = pl.data.errors;
+                $scope.ShowError = true;
+            }
+
+            else {
+                $('#UserModalLogin .close').click();
+                location.reload();
+            }
+        }, function (err) {
+            console.log("Err" + err);
+        });
     }
-    UserController = this;
+    
 });

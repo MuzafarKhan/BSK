@@ -1,46 +1,4 @@
-﻿@{
-    ViewBag.Title = "Index";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
-
-<h2>User</h2>
-
-<div ng-controller="UserController" ng-init="LoadUsers()">
-    <div class="table-responsive">
-        <table class="table table-bordered table-hover">
-            <tr>
-                <th><label>ID</label></th>
-                <th><label>Name</label></th>
-                <th><label>Email</label></th>
-                <th><label>Contact Number Primary</label></th>
-                <th><label>Contact Number Secondary</label></th>
-            </tr>
-
-            <tr ng-repeat="User in UsersList">
-                <td>{{User.intUserId}}</td>
-                <td>{{User.vchName}}</td>
-                <td>{{User.vchEmail}}</td>
-                <td>{{User.intContactNumberPrimary}}</td>
-                <td>
-                    <label ng-show="User.intContactNumberSecondary != '0'">{{User.intContactNumberSecondary}}</label>
-                    <label class="badge alert-danger" ng-show="User.intContactNumberSecondary == '0'">Not Added Yet</label>
-                </td>
-            </tr>
-            <tr ng-show="UsersList.length == 0">
-                <td class="text-center alert-danger" colspan="7">
-                    No user(s) found!
-                </td>
-            </tr>
-
-        </table>
-
-        <a href="#UserModal" data-toggle="modal" class="btn btn-sm btn-primary" ng-click="ResetModel(false)" id="AddUser">
-            <i class="fa fa-plus"></i> Add User
-        </a>
-    </div>
-</div>
-
-
+﻿
 <!-- Add User Modal-->
 <div class="modal inmodal in" id="UserModal" tabindex="-1" role="dialog" aria-hidden="false" ng-controller="UserController" style="display: none;">
     <div class="modal-dialog">
@@ -57,8 +15,6 @@
                                 <li id="errorMessages" class="error" data-ng-repeat="error in errors">{{error}}</li>
                             </ul>
                         </div>
-                        <input type="hidden" id="hdnUserId" ng-model="UserId" ng-init="UserId=0" />
-                        @*<div class="alert custom-alert alert-success form-group col-md-12" ng-model="Message" ng-show="ShowsuccessMesg"><label ng-model="Message">{{Message}}</label></div>*@
 
                         <div class="form-group">
                             <label class="col-sm-3 control-label">Name</label>
@@ -76,7 +32,6 @@
                             <label class="col-sm-3 control-label">Email</label>
                             <div class="col-sm-7">
                                 <input type="text" placeholder="" class="form-control" ng-model="vchEmail" ng-change="OnChangeingvalue()" ng-click="PasswordValidate(RePassword)" ng-blur="EmailVerification(Email)">
-                                <input id="HiddenOldEmailVal" type="hidden" name="HiddenOldEmailVal" ng-model="oldEmailval" />
                             </div>
                         </div>
                         <div class="form-group">
@@ -95,7 +50,3 @@
         </div>
     </div>
 </div>
-
-
-
-

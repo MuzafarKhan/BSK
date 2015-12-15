@@ -15,6 +15,46 @@ namespace BSK.Controllers.API
     public class UserController :  BaseApiController
     {
         [HttpGet]
+        [Route("Login")]
+        public IHttpActionResult Login(string Email, string Password)
+        {
+            
+            UserInfo user = new UserInfo(Email);
+            if (user.intUserId > 0)
+            {
+                if (PasswordHash.PasswordHash.ValidatePassword(Password, user.vchPassword))
+                {
+                    return Json(new
+                    {
+                        success = true,
+                    });
+
+                }
+                else
+                {
+                    ModelState.AddModelError("Login Failed", "Invalid Email Or Password");
+                    return Json(new
+                    {
+                        success = false,
+                        errors = ModelState.Keys.SelectMany(k => ModelState[k].Errors)
+                            .Select(m => m.ErrorMessage).ToArray()
+                    });
+                }
+            }
+            else {
+                 ModelState.AddModelError("Login Failed", "Invalid Email Or Password");
+                return Json(new
+                {
+                    success = false,
+                    errors = ModelState.Keys.SelectMany(k => ModelState[k].Errors)
+                        .Select(m => m.ErrorMessage).ToArray()
+                });
+            }
+           
+            
+        }
+
+        [HttpGet]
         [Route("GetUsersList")]
         public List<BSK.Lib.Models.UserInfo> GetUsersList()
         {
@@ -29,8 +69,8 @@ namespace BSK.Controllers.API
             await SaveFile((int)Enumerations.MediaType.Profile);
             UserInfo ui = (UserInfo)GetFormData<UserInfo>(result);
 
-            //var controller = ControllerContext.Controller as ApiController;
-            //controller.Validate(ui);
+            var controller = ControllerContext.Controller as ApiController;
+            controller.Validate(ui);
 
             if (ui.intUserId > 0)
             {

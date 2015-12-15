@@ -22,6 +22,7 @@ namespace BSK
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
+                      "~/Content/MyStyles.css",
                       "~/Content/site.css"));
 
             //Angular

@@ -5,8 +5,8 @@
 Deal.prototype = {
 
     Init: function () {
-        Validation.prototype.AllowNumbersOnly("#Price");
-        Validation.prototype.AllowKeyboard("#Price");
+        Validation.prototype.AllowNumbersOnly("#txtPrice");
+        Validation.prototype.AllowKeyboard("#txtPrice");
     }
 }
 
